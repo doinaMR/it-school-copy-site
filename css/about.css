@@ -1,0 +1,72 @@
+/* TRAINERS SECTION */
+.trainers-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: var(--spacing-large);
+}
+
+.trainers .trainers-wrapper {
+  width: 25%;
+  padding: 0 var(--spacing-small);
+}
+/* Stilizarea pentru small screen */
+@media (max-width: 992px) {
+  .trainers .trainers-wrapper {
+    width: calc(100% / 3);
+  }
+}
+/* Stilizarea pentru tableta */
+@media (max-width: 768px) {
+  .trainers .trainers-wrapper {
+    width: 50%;
+  }
+}
+/* Stilizarea pentru mobile */
+@media (max-width: 576px) {
+  .trainers .trainers-wrapper {
+    width: 100%;
+  }
+}
+
+.trainers .trainer {
+  min-height: 350px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: var(--spacing-small);
+  margin-top: calc(var(--spacing-xl)*2);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.trainer .image-wrapper {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+
+  position: absolute;
+  top: -75px;
+}
+
+.trainer img {
+  /* cu aceste doua setari umplem continutul pozei in functie de dimensiuni container */
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+}
+.trainers-wrapper h3 {
+  width: 100%;
+  font-size: var(--fs-large);
+  font-weight: 400;
+  text-align: center;
+  background-color: rgb(20, 30, 76, 0.9);
+  border-radius: 5px;
+
+  padding: var(--spacing-tiny) 0;
+  margin-bottom: var(--spacing-medium);
+  margin-top: 50px;
+  z-index: 1;
+}

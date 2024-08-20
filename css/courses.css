@@ -1,0 +1,104 @@
+/* ----SECTIUNEA COURSES---- */
+.courses-section .container {
+  padding: var(--spacing-medium) var(--spacing-small);
+}
+
+.courses-section h2 {
+  text-align: center;
+  padding-top: var(--spacing-large);
+  margin-bottom: var(--spacing-large);
+}
+
+.courses-section .main-paragraf {
+  text-align: center;
+  margin-bottom: var(--spacing-large);
+  margin-left: var(--spacing-small);
+  margin-right: var(--spacing-small);
+}
+
+.courses-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: var(--spacing-large);
+}
+
+.courses-container .courses-wrapper {
+  width: calc(100% / 3);
+  padding: 0 var(--spacing-small);
+}
+
+/* Stilizarea pentru small screen */
+@media (max-width: 992px) {
+  .courses-container .courses-wrapper {
+    width: 50%;
+  }
+}
+
+/* Stilizarea pentru tableta */
+@media (max-width: 768px) {
+  .courses-container .courses-wrapper {
+    width: 100%;
+  }
+}
+
+
+.courses-container .course {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: var(--spacing-tiny);
+  margin-bottom: var(--spacing-medium);
+}
+
+.courses-container .presentation-image {
+  /* cu aceasta setare  setam latimea imaginii 100% din card */
+  width: 100%;
+  height: auto;
+
+  margin-bottom: var(--spacing-large);
+}
+
+.courses-container .content {
+  padding: 0 var(--spacing-small);
+}
+
+.courses-container h3 {
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-medium);
+}
+
+.courses-container .microsoft-logo {
+  width: 80px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.courses-container span, .courses-container .certification {
+  color: #666;
+  font-size: var(--fs-medium);
+}
+
+.courses-container .badges, .courses-container .certification {
+  margin-bottom: var(--spacing-medium);
+}
+
+.courses-container .duration-month, .courses-container .duration-hours, .courses-container .microsoft-logo {
+  margin-left: var(--spacing-small);
+}
+
+.courses-container .material-symbols-outlined {
+  vertical-align: middle;
+}
+
+.courses-container a {
+  color: var(--text-light);
+  background-color: var(--button-color);
+
+  font-size: var(--fs-medium);
+  text-align: center;
+
+  padding: var(--spacing-tiny);
+  border-radius: 5px;
+  margin-bottom: var(--spacing-medium);
+
+  width: 100px;
+}

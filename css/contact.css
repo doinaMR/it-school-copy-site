@@ -1,0 +1,93 @@
+/* ----SECTIUNEA CONTACT - contact---- */
+.contact h2 {
+  text-align: center;
+  padding-top: var(--spacing-large);
+  margin-bottom: var(--spacing-large);
+}
+
+.contact .contact-txt {
+  margin-bottom: var(--spacing-large);
+}
+
+/* contact-wrapper */
+.contact .contact-wrapper {
+  display: flex;
+  margin-bottom: var(--spacing-large);
+}
+
+@media (max-width: 768px) {
+  .contact .contact-wrapper {
+    flex-direction: column;
+  }
+}
+/* /contact-wrapper */
+
+.contact ul, .contact .contact-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-medium);
+}
+
+@media (max-width: 768px) {
+  .contact ul, .contact .contact-form {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.contact li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: var(--spacing-small);
+  border-bottom: 1px solid #ddd;
+  margin-bottom: var(--spacing-large);
+}
+
+.contact .contact-icon {
+  color: var(--text-primary);
+  /* cu aceasta setare pozitionam pe verticala elementul */
+  vertical-align: middle;
+}
+
+.contact a {
+  color: #8e8e8e;
+}
+
+.contact a:hover {
+  color: var(--text-primary);
+}
+
+.description {
+  color: #8e8e8e;
+}
+
+/* ----SECTIUNEA CONTACT - FORMULAR---- */
+
+.contact-form label {
+  font-size: var(--fs-medium);
+  margin-bottom: var(--spacing-tiny);
+}
+
+.contact-form input, .contact-form textarea {
+  font-size: var(--fs-medium);
+  padding: var(--spacing-small);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: var(--spacing-medium);
+}
+
+.contact-form textarea {
+  height: 100px;
+}
+
+.contact-form .submit-button {
+  font-size: var(--fs-medium);
+  text-align: center;
+  color: var(--text-white);
+  background-color: var(--button-color);
+  border: 1px solid var(--button-color);
+  width: 100px;
+}
